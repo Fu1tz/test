@@ -10,18 +10,18 @@ public class TestTask {
         double proc = 0.1; // проценты
 
         while (currentBalance < finalBalance) {  // если текущий баланс не будет > конечного,
-            // то будут выполнятся условия в цикле, до того момента пока условие не будет возвращать false
+            // то будут выполняться условия в цикле, до того момента пока условие не будет возвращать false
 
-            currentBalance += payment; // к текущему балансу ( (+=) - прибавляем и присваеваем) то что отложили
-            currentBalance = currentBalance + currentBalance * proc; // условие по которому расчитывается наш баланс
+            currentBalance += payment; // к текущему балансу ( (+=) - прибавляем и присваиваем) то что отложили
+            currentBalance = currentBalance + currentBalance * proc; // условие по которому рассчитывается наш баланс
             years++; // каждый год увеличивается на 1 (++), пока условие не вернет false (сумма накоплена)
             System.out.println("Year " + years+ " - " +currentBalance);
         }
 
 
         do {
-            currentBalance += payment; // к текущему балансу ( (+=) - прибавляем и присваеваем) то что отложили
-            currentBalance = currentBalance + currentBalance * proc; // условие по которому расчитывается наш баланс
+            currentBalance += payment; // к текущему балансу ( (+=) - прибавляем и присваиваем) то что отложили
+            currentBalance = currentBalance + currentBalance * proc; // условие по которому рассчитывается наш баланс
             years++; // каждый год увеличивается на 1 (++), пока условие не вернет false (сумма накоплена)
             System.out.println("Year " + years + " - " + currentBalance);
         } while (currentBalance < finalBalance);
